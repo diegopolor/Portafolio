@@ -204,6 +204,7 @@ body{
     width: 100%;
     
 }
+
 .flecha-icono{
 
   position: absolute;
@@ -225,6 +226,7 @@ body{
   100%{margin-top: 0;}
 
 }
+
 
 
 .menu{
@@ -255,10 +257,12 @@ body{
    
 }
 
+
 .menu-boton{
 display: none;
 width: 50px;
 font-size: 25px;
+cursor: pointer;
 
 }
 
@@ -280,6 +284,35 @@ font-size: 25px;
     100%{ margin-top: 0;  }
 }
 
+.menu-mobil{
+
+  display: none;
+
+}
+
+.menu-mobil_item{
+
+color:white;
+text-decoration: none;
+text-align: center;
+padding: 5%;
+width: 100%;
+
+}
+
+.menu-mobil_item:hover{
+ 
+  background-color: #1d1d1d;
+  border-bottom: 2px solid var(--color-secun);  
+
+
+}
+
+
+
+
+
+
 .subir{
   
     display: flex;
@@ -288,7 +321,7 @@ font-size: 25px;
 
     color: black;
     text-decoration: none;
-    position: fixed;
+    position: initial;
     font-size: 20px;
 
     right: 10px;
@@ -445,9 +478,11 @@ background-color: var(--back-color);
 
   .portafolio-item_text{
     
-    position: absolute;  
+      
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
+    
+    
   } 
  
 
@@ -638,8 +673,43 @@ background-color: var(--back-color);
 /* |------------- Menú ------------------| */
 
 .menu{
-
   justify-content: space-between;
+}
+
+.menu-mobil{
+
+  position: fixed;
+  width: 100%;
+  height: 45%;
+  top: 5%;
+  right: -100%;
+  z-index: -1;
+  
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes menu1 {
+  
+   0%{ right: -100%;}
+   100%{  right: 0%;}
+ 
+
+}
+
+@keyframes menu2 {
+  
+  0%{ right: 0%;}
+  100%{  right: -100%;}
+
 
 }
 
@@ -657,6 +727,7 @@ background-color: var(--back-color);
   margin: 5%;
 }
  
+
 
 
 
