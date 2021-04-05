@@ -699,16 +699,16 @@ background-color: var(--back-color);
 
 @keyframes menu1 {
   
-   0%{ right: -100%;}
-   100%{  right: 0%;}
+   0%{ right: -100%; opacity: 0;}
+   100%{  right: 0%; opacity: 1;}
  
 
 }
 
 @keyframes menu2 {
   
-  0%{ right: 0%;}
-  100%{  right: -100%;}
+  0%{ right: 0%; opacity: 1;}
+  100%{  right: -100%; opacity: 0;}
 
 
 }
