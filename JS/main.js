@@ -1,6 +1,7 @@
 const menuMobil = document.querySelector(".menu-mobil");
 const botonMenu = document.querySelector(".menu-boton"); 
 const menuMobilItem = document.querySelector(".menu-mobil_item");
+const habilidadesTools = document.querySelector(".habilidades-tools"); 
 
 var botonValue = false; 
 
@@ -26,5 +27,12 @@ menuMobilItem.addEventListener("click", ()=>{
 
 
 })
+
+addEventListener("scroll", () => {
+  
+    let altura = habilidadesTools.offsetTop - 400; 
+    if(scrollY > altura)habilidadesTools.style.animationName = "tools"; 
+     
+  })
 
 

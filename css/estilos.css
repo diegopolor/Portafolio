@@ -287,6 +287,7 @@ cursor: pointer;
 .menu-mobil{
 
   display: none;
+  z-index: 100;
 
 }
 
@@ -307,10 +308,6 @@ width: 100%;
 
 
 }
-
-
-
-
 
 
 .subir{
@@ -355,7 +352,24 @@ background-color: var(--back-color);
   
     display: flex;
     justify-content: center;
+
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+  
+
+
+    
+
 }
+
+@keyframes tools{
+ 
+   from {margin-top:5%; transform: scale(0.5);  opacity: 0;}
+   to{ margin-top:0%; transform: scale(1); opacity: 1; }
+
+
+}
+
 
 .habilidades-titulo{
 
@@ -722,9 +736,10 @@ background-color: var(--back-color);
 }
 
 .menu-img{
-  width: 4em ;
+  width: 5em ;
   animation: none;
-  margin: 5%;
+  margin-top: 2%;
+  margin-left: 5%;
 }
  
 
