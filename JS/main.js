@@ -5,34 +5,24 @@ const habilidadesTools = document.querySelector(".habilidades-tools");
 
 var botonValue = false; 
 
-botonMenu.addEventListener("click", ()=>
-{
-
-   if(botonValue == false) 
-   {
-    menuMobil.style.animationName = "menu1";
-    botonValue = true;    
-   }  
-   else{
-    menuMobil.style.animationName = "menu2";
-    botonValue = false;      
-   }
-
-})
-
-menuMobilItem.addEventListener("click", ()=>{
-   
+botonMenu.addEventListener("click", ()=>{
+   if(botonValue){ 
     menuMobil.style.animationName = "menu2";
     botonValue = false;  
+   }else{
+      menuMobil.style.animationName = "menu1";
+      botonValue = true; 
+   }
+})
 
-
+menuMobilItem.addEventListener("click", ()=>{   
+    menuMobil.style.animationName = "menu2";
+    botonValue = false;  
 })
 
 addEventListener("scroll", () => {
-  
     let altura = habilidadesTools.offsetTop - 400; 
-    if(scrollY > altura)habilidadesTools.style.animationName = "tools"; 
-     
+    if(scrollY > altura)habilidadesTools.style.animationName = "tools";     
   })
 
 var typed = new Typed('.prueba-typed', {
