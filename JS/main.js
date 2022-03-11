@@ -36,6 +36,7 @@ addEventListener("scroll", () => {
   })
 
 var typed = new Typed('.prueba-typed', {
-  strings: ["Developer FrontEnd.", "Soy el personal creativo que estas buscando."],
-  typeSpeed: 30
+  strings: ["Soy el personal creativo que estas buscando."],
+  typeSpeed: 30,
+  loop: true
 });
