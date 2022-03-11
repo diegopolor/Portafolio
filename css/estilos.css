@@ -451,15 +451,7 @@ background-color: var(--back-color);
 .portafolio-item1{
   
   grid-area: POS1;
-  background-image:  url(../images/portafilio1.PNG);  
-  background-size: cover;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  cursor: pointer;
-  
+ 
 
 }
 
