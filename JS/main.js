@@ -38,5 +38,6 @@ addEventListener("scroll", () => {
 var typed = new Typed('.prueba-typed', {
   strings: ["Soy el personal creativo que estas buscando."],
   typeSpeed: 30,
-  loop: true
+  loop: true,
+  fadeOut: true,
 });
